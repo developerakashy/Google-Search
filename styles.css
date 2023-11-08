@@ -1,0 +1,134 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+body{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(32,33,36,1);;
+}
+
+
+#links{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#links a{
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #b9c3d1;
+}
+
+#links a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#head{
+    position: relative;
+}
+
+img{
+    height: 92px;
+    width: 272px;
+    margin-bottom: 22px;
+}
+
+#image{
+    position:absolute;
+    font-size: 17px;
+    left: 215px;
+    bottom: 8px;
+    color: #4487f6;
+}
+
+
+
+svg{
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translate(-50%,-50%);
+    
+}
+
+#text-area input{
+    width: 560px;
+    line-height: 35px;
+    font-size: 20px;
+    outline: none;
+    padding: 6px 46px;
+    background-color: rgba(32,33,36,1);
+    border: 1px solid gray;
+    border-radius: 25px;
+
+}
+
+#text-area:hover input{
+    background-color: #303134;
+    border-color: #303134;
+}
+#text-area input:focus{
+    background-color: #303134;
+}
+
+
+
+#text-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 560px;
+    
+}
+
+#submit-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#submit-area >input{
+    height: 36px;
+    background-color: #303134;
+    border: 1px solid #303134;
+    padding: 0px 16px;
+    color: #e8eaed;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: .5px;
+
+}
+
+#submit-area > input:hover{
+    box-shadow: 0 1px 3px rgba(23,23,23,0.24);
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed
+}
+
+
+@media(width<630px){
+    #text-area input{
+        width: 100%;
+    }
+    #text-area{
+        width: 90vw;
+    }
+}
